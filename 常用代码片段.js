@@ -340,3 +340,7 @@ console.log(arrayToTree(arr)) */
     document.documentElement.style.fontSize = rootFontSiz
 
 */
+// 统计字符出现的次数
+const str = "aabccddd"
+const  res = [...str].reduce((a,b)=>(a[b]++ || (a[b] = 1),a),{})
+console.log(res)
